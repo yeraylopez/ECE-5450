@@ -1,0 +1,38 @@
+Program Design
+
+1) Take in string 
+	- find length of string for for loops (n-1)
+
+2) Convert String to Morse Code using for loop
+	a) put morse code into LED display
+	b) beep out morse code using speaker
+		- write a function that takes in string and converts '.' & '-' to fixed length beeps
+		- maybe also write a function that does this by flashing the LED screen or a LED light
+	c) create a button once triggered swaps morse code to the original string to translate it
+		- maybe use dpad for it 
+
+
+Starting point:
+
+Lets repurpose our LCD code and convert using the library
+
+
+int Backlight = (1<<30); and IOSET0 USED TO TURN ON AND OFF BACK LIGHT
+
+
+int DL = (1<<4);	/* Bit position for DL bit in Function Set Command  SET FOR 8 BITS*/
+		int N = (1<<3);		/* 2-line if 1 */
+		int I_D = (0<<1);	/* cursor blink move to right if 1 */
+		int D = (1<<2);		/* Display On/Off Command */
+		int C = (1<<1);		/* Cursor on/off*/
+		int FUNC = (1<<5);	/* Function Mode Set Command */
+		int ENTRY = (1<<2);	/* Entry Mode Set Command */
+		int DISP = (1<<3);	/* Display On/Off Command) */	
+
+
+// NOTES:
+
+How do you write new Chars inorder to fit to second line
+
+or when we detect a total count of 16 clear and keep printing 
+

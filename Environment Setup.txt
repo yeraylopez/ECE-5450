@@ -1,0 +1,34 @@
+Project>New Project 
+
+NXP (Phillips) > LPC2148
+
+Copy startup.s
+
+Select startup.s
+
+Click target button
+> under Output tab > tick Create HEX File
+> under Linker tab > click Use Memory Layout from Target Dialog
+
+File>New> .c file
+
+Right click Source Group 1 > Add .c file created
+
+Build Project by clicking on button
+
+> Use Flash Magic to load program
+
+>Select LPC 2148 under Arm v7
+
+>Select proper COM port 
+
+>Baudrate = 38400
+
+>Oscillator Rate = 12.0
+
+>Verify after programming 
+
+>Erase blocks used by Hex File
+
+>Select Hex File
+
